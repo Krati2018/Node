@@ -1,0 +1,29 @@
+{
+  "name": "XaaS_KxEngine_Framework",
+  "version": "0.0.1",
+  "description": "Implementation of KxEngine to build Chatbot Solutions using a Configuration File with Integration with NLP Engines",
+  "main": "app.js",
+  "repository": "",
+  "author": "Accenture Digital XaaS Team <bhaskar.basu@accenture.com, anjan.paul@accenture.com, sourav.a.das@accenture.com>",
+  "dependencies": {
+    "adaptjs": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "dateformat": "~1.0.12",
+    "express": "^4.15.4",
+    "memory-cache": "^0.1.6",
+    "mysql": "^2.12.0",
+    "natural": "^0.5.0",
+    "node-wit": "^4.0.0",
+    "request": "^2.74.0",
+    "sequelize": "^3.30.4",
+    "wordnet-db": "latest"
+  },
+  "engines": {
+    "node": ">=6.3.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy --stop-previous-version"
+  }
+}
